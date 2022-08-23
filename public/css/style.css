@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  font-family: cursive;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+nav a:hover {
+  background-color: fuchsia;
+}
+
+
+/* HOME */
+
+.home {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.home p {
+  font-size: 30px;
+}
+
+.toggle {
+  margin: 20px 20px;
+  max-height: 100%;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.toggle:hover {
+  background-color: gray;
+}
+
+article a {
+  display: block;
+  text-decoration-line: none;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+  color: black;
+  padding: 5px;
+  background-color: cadetblue;
+  border-radius: 7px;
+}
+
+article h5,
+article p {
+  margin-left: 20px;
+}
+
+#backbtn {
+  display: block;
+  width: fit-content;
+  color: black;
+  padding: 5px;
+  margin: 10px;
+  background-color: lime;
+  border-radius: 7px;
+}
+
+/* Login */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.active {
+  background: yellowgreen;
+}
+
+.form-registration input {
+  border-radius: 0;
+  margin-bottom: 1px;
+}
+
+.category a {
+  display: inline-block;
+}
