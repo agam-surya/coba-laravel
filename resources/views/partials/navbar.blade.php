@@ -15,6 +15,8 @@
         </li>
         <li class="nav-item"> <a class="nav-link {{ $active === 'portfolio' ? 'active':''}}" href="/portfolio">PORTFOLIO</a>
         </li>
+        <li class="nav-item"> <a class="nav-link {{ $active === 'categories' ? 'active':''}}" href="/categories">CATEGORIES</a>
+        </li>
         <li class="nav-item"> <a class="nav-link {{ $active === 'login' ? 'active':''}}" href="/login">Login</a>
       </ul>
     </div>

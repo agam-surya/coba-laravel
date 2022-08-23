@@ -15,7 +15,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('categories', [
+            "active" => 'categories',
+            "categories" => Category::all(),
+        ]);
     }
 
     /**
