@@ -11,7 +11,7 @@
         @csrf
 
         <div class="form-floating">
-          <input type="text" name="name" class="form-control rounded-top @error('name') is-invalid @enderror" id="name" placeholder="name@example.com" value="{{ old('name') }}">
+          <input type="text" name="name" class="form-control rounded-top @error('name') is-invalid @enderror" id="name" placeholder="name@example.com" value="{{ old('name') }}" required>
           <label for="name">Name </label>
           @error('name')
           <div class="invalid-feedback">{{$message}}
@@ -20,7 +20,7 @@
 
         </div>
         <div class="form-floating">
-          <input type="text" name="username" class="form-control rounded-top @error('username') is-invalid @enderror" id="username" placeholder="name@example.com" value="{{ old('username')}}">
+          <input required type="text" name="username" class="form-control rounded-top @error('username') is-invalid @enderror" id="username" placeholder="name@example.com" value="{{ old('username')}}">
           <label for="username">Username address</label>
           @error('username')
           <div class="invalid-feedback">{{ $message }}</div>
@@ -28,14 +28,14 @@
 
         </div>
         <div class="form-floating">
-          <input type="email" name="email" class="form-control rounded-top @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" value="{{ old('email')}}">
+          <input required type="email" name="email" class="form-control rounded-top @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" value="{{ old('email')}}">
           <label for="email">Email address</label>
           @error('email')
           <div class="invalid-feedback">{{$message}}</div>
           @enderror
         </div>
         <div class="form-floating rounded-bottom">
-          <input type="password" name="password" class="form-control rounded-top @error('password') is-invalid @enderror" id="password" placeholder="Password">
+          <input required type="password" name="password" class="form-control rounded-top @error('password') is-invalid @enderror" id="password" placeholder="Password">
           <label for="password">Password</label>
           @error('password')
           <div class="invalid-feedback">{{$message}}</div>
