@@ -11,8 +11,6 @@
 
   <!-- custom style css -->
   <link rel="stylesheet" href="/css/dashboard.css">
-  <!-- Custom styles for this template -->
-  <link href="dashboard.css" rel="stylesheet">
 
   <!-- trix editor -->
   <link rel="stylesheet" type="text/css" href="/css/trix.css">

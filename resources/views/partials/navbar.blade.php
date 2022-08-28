@@ -9,11 +9,9 @@
       <ul class="navbar-nav mb-2 mb-md-0">
         <li class="nav-item"> <a class="nav-link {{ $active === 'home' ? 'active':''}}" href="/">HOME</a>
         </li>
-        <li class="nav-item"> <a class="nav-link {{ $active === 'about' ? 'active':''}}" href="/about">ABOUT</a>
+        <li class="nav-item d-none"> <a class="nav-link {{ $active === 'about' ? 'active':''}}" href="/about">ABOUT</a>
         </li>
         <li class="nav-item"> <a class="nav-link {{ $active === 'post' ? 'active':''}}" href="/posts">POSTS</a>
-        </li>
-        <li class="nav-item"> <a class="nav-link {{ $active === 'portfolio' ? 'active':''}}" href="/portfolio">PORTFOLIO</a>
         </li>
         <li class="nav-item"> <a class="nav-link {{ $active === 'categories' ? 'active':''}}" href="/categories">CATEGORIES</a>
         </li>

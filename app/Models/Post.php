@@ -20,6 +20,7 @@ class Post extends Model
     //     'body'
     // ];
     protected $guarded = ['id'];
+    protected $with = ['category'];
 
     public function category()
     {
