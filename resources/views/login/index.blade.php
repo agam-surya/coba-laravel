@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="row justify-content-center">
-  <div class="col-md-4">
+  <div class="col-md-4 p-1">
     <main class="form-signin">
 
       @if(session()->has('success'))
@@ -22,14 +22,14 @@
       <h1 class="h3 mb-3 fw-normal text-center">Please Login</h1>
       <form action="/login" method="post">
         @csrf
-        <div class="form-floating">
+        <div class="form-floating mb-1">
           <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" autofocus required>
           <label for="email">Email address</label>
           @error('email')
           <div class="invalid-feedback">{{$message}}</div>
           @enderror
         </div>
-        <div class="form-floating">
+        <div class="form-floating mb-1">
           <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
           <label for="password">Password</label>
         </div>
