@@ -18,7 +18,7 @@
   <table class="table table-striped table-sm w-auto">
     <thead>
       <tr>
-        <th scope="col">#</th>
+        <th scope="col">No</th>
         <th scope="col">Title</th>
         <th scope="col">Category</th>
         <th scope="col">Action</th>

@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @section('content')
 
-<h2>Categories</h2>
+<h2 class="text-center mb-5">Categories</h2>
 
 
 <div class="container">
