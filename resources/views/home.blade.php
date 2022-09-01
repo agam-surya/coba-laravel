@@ -18,7 +18,7 @@
     <h3 class="card-title"><a class="text-decoration-none" href="/post/{{$posts[0]->slug}}">{{$posts[0]->title}}</a></h3>
     <p>
       <small>
-        <p>Category <a href="/category/{{$posts[0]->category->slug}}" class="text-decoration-none">{{$posts[0]->category->name}}</a> Last updated {{$posts[0]->updated_at->diffForHumans()}}</p>
+        <p>Category <a href="/posts?category={{$posts[0]->category->slug}}" class="text-decoration-none">{{$posts[0]->category->name}}</a> Last updated {{$posts[0]->updated_at->diffForHumans()}}</p>
       </small>
     </p>
     <p class="card-text">{{$posts[0]->excerpt}}</p>
@@ -35,7 +35,7 @@
     @foreach($posts->skip(1) as $post)
     <div class="col-md-4 mb-3">
       <div class="card text-center">
-        <div class="position-absolute bg-warning p-3 text-white"><a class="text-decoration-none" href="/category/{{$post->category->slug}}">{{$post->category->name}}</a></div>
+        <div class="position-absolute bg-warning p-3 text-white"><a class="text-decoration-none" href="/posts?category={{$post->category->slug}}">{{$post->category->name}}</a></div>
         @if($post->image)
         <img src="{{asset('storage/'.$post->image)}}" class="img-fluid" alt="{{$post->category->name}}">
 
