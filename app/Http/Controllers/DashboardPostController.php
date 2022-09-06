@@ -21,7 +21,7 @@ class DashboardPostController extends Controller
     {
         // Post::where('user_id', auth()->user()->id)->get();
         return view('dashboard.posts.index', [
-            'posts' => Post::get()
+            'posts' => Post::where('user_id', auth()->user()->id)->get()
         ]);
     }
 
@@ -58,6 +58,7 @@ class DashboardPostController extends Controller
         }
 
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 100);
+        $validatedData['user_id'] = auth()->user()->id;
 
 
         Post::create($validatedData);

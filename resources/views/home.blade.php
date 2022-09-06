@@ -1,7 +1,6 @@
 @extends('layouts/layout')
 @section('title', 'HOME')
 @section('content')
-
 @if($posts->count())
 
 <div class="card mb-3">

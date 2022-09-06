@@ -20,11 +20,16 @@ class Post extends Model
     //     'body'
     // ];
     protected $guarded = ['id'];
-    protected $with = ['category'];
+    protected $with = ['category', 'user'];
 
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
     public function getRouteKeyName()
     {
@@ -48,7 +53,7 @@ class Post extends Model
         });
 
         $query->when($filters['category'] ??  false, function ($query, $category) {
-            return $query->whereHas('category', function($query) use ($category){
+            return $query->whereHas('category', function ($query) use ($category) {
                 $query->where('slug', $category);
             });
         });
