@@ -28,6 +28,12 @@
           Categories
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link {{ Request::is('dashboard/users*') ? 'active' : '' }}" href="/dashboard/users">
+          <span data-feather="file-text"></span>
+          Users
+        </a>
+      </li>
     </ul>
     @endcan
 
